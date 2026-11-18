@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | VisionPet</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #e8f0f0, #f4f4f4);
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+
+        .cadastro {
+            background-color: white;
+            width: 100%;
+            max-width: 420px;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+            display: grid;
+            gap: 15px;
+        }
+
+        .logo {
+            text-align: center;
+        }
+
+        .logo span {
+            font-size: 35px;
+        }
+
+        h2 {
+            color: #004853;
+            font-size: 28px;
+            margin: 5px;
+        }
+
+        .subtitulo {
+            color: #777;
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        h3 {
+            text-align: center;
+            color: #333;
+            margin: 5px 0;
+        }
+
+        form {
+            display: grid;
+            gap: 12px;
+        }
+
+        .campo {
+            display: grid;
+            gap: 6px;
+        }
+
+        label {
+            color: #333;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        input:not([type="checkbox"]) {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        input:focus {
+            border-color: #004853;
+            box-shadow: 0 0 0 2px rgba(0, 72, 83, 0.1);
+        }
+
+        .termos {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            color: #555;
+        }
+
+        .termos input {
+            accent-color: #004853;
+        }
+
+        .termos a {
+            color: #004853;
+            text-decoration: none;
+        }
+
+        button {
+            background-color: #004853;
+            color: white;
+            padding: 13px;
+            border: none;
+            border-radius: 7px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #006575;
+            transform: translateY(-2px);
+        }
+
+        .voltar {
+            text-align: center;
+            font-size: 13px;
+            color: #777;
+        }
+
+        .voltar a {
+            color: #004853;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .voltar a:hover {
+            text-decoration: underline;
+        }
+
+        .rodape {
+            text-align: center;
+            color: #999;
+            font-size: 11px;
+            margin-bottom: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="cadastro">
+
+        <div class="logo">
+            <span>🐾</span>
+            <h2>VisionPet</h2>
+            <p class="subtitulo">
+                Faça parte do nosso mundo de cuidados!
+            </p>
+        </div>
+
+        <h3>Crie sua conta</h3>
+
+        <form action="#" method="POST">
+
+            <div class="campo">
+                <label for="nome">Nome completo</label>
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome completo"
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="telefone">Telefone</label>
+                <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    placeholder="(00) 00000-0000"
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="senha">Senha</label>
+                <input
+                    type="password"
+                    id="senha"
+                    name="senha"
+                    placeholder="Crie uma senha"
+                    required
+                    minlength="6"
+                >
+            </div>
+
+            <div class="campo">
+                <label for="confirmar">Confirmar senha</label>
+                <input
+                    type="password"
+                    id="confirmar"
+                    name="confirmar"
+                    placeholder="Digite a senha novamente"
+                    required
+                    minlength="6"
+                >
+            </div>
+
+            <label class="termos">
+                <input type="checkbox" required>
+                Aceito os <a href="#">termos de uso</a>
+            </label>
+
+            <button type="submit">
+                Criar minha conta
+            </button>
+
+        </form>
+
+        <div class="voltar">
+            Já possui uma conta?
+            <a href="index.html">Fazer login</a>
+        </div>
+
+        <p class="rodape">
+            © 2026 VisionPet - Todos os direitos reservados.
+        </p>
+
+    </div>
+
+</body>
+</html>
