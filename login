@@ -163,7 +163,9 @@
             <input type="submit" value="Entrar">
         </form>
 
-        <a href="#">Ainda não possui cadastro? Cadastre-se</a>
+        <a href="cadastro.html">
+          Ainda não possui cadastro? Cadastre-se
+        </a>
 
         <p class="rodape">
             © 2026 VisionPet - Todos os direitos reservados.
